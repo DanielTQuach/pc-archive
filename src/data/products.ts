@@ -1,0 +1,103 @@
+import type { Product } from "./types";
+
+/** Starter products. One of each kind the first slice needs. */
+export const products: Product[] = [
+  {
+    id: "tuf-z690-plus-d4",
+    name: "TUF Gaming Z690-Plus D4",
+    brand: "ASUS",
+    kind: "motherboard",
+    year: 2021,
+    platformIds: ["alderlake-s", "raptorlake-s"],
+    memory: ["DDR4"],
+    note: "DDR4 LGA 1700 board. It also runs 13th gen after a BIOS update.",
+    ports: {
+      pcie: "PCIe 5.0 x16 and PCIe 4.0 x4",
+      usbC: ["USB 3.2 Gen 2x2 (20 Gbps)"],
+    },
+  },
+  {
+    id: "strix-z690-e",
+    name: "ROG Strix Z690-E Gaming WiFi",
+    brand: "ASUS",
+    kind: "motherboard",
+    year: 2021,
+    platformIds: ["alderlake-s", "raptorlake-s"],
+    memory: ["DDR5"],
+    note: "DDR5 LGA 1700 board for the same CPUs as the D4 model.",
+    ports: {
+      pcie: "PCIe 5.0 x16 and PCIe 4.0 x4",
+      usbC: ["USB 3.2 Gen 2 (10 Gbps)"],
+      thunderbolt: "Thunderbolt 4 header",
+    },
+  },
+  {
+    id: "thinkpad-t14-gen3",
+    name: "ThinkPad T14 Gen 3",
+    brand: "Lenovo",
+    kind: "laptop",
+    year: 2022,
+    platformIds: ["alderlake-p"],
+    memory: ["DDR4"],
+    note: "Intel model. DDR4 SODIMM.",
+    ports: {
+      thunderbolt: "2x Thunderbolt 4",
+      usbC: ["Thunderbolt 4 / USB4 40 Gbps", "Thunderbolt 4 / USB4 40 Gbps"],
+    },
+  },
+  {
+    id: "ms-01",
+    name: "MS-01",
+    brand: "Minisforum",
+    kind: "mini-pc",
+    year: 2023,
+    platformIds: ["raptorlake-h"],
+    memory: ["DDR5"],
+    note: "SFF workstation with an OCuLink port for an external GPU.",
+    ports: {
+      thunderbolt: "2x Thunderbolt 4",
+      usbC: ["Thunderbolt 4 / USB4 40 Gbps"],
+      oculink: "1x OCuLink, PCIe 4.0 x4",
+    },
+  },
+  {
+    id: "radxa-x4",
+    name: "X4",
+    brand: "Radxa",
+    kind: "sbc",
+    year: 2024,
+    platformIds: ["alderlake-n"],
+    memory: ["DDR5"],
+    note: "N100 board with soldered LPDDR5. This model has no OCuLink port.",
+    ports: {
+      usbC: ["USB 3.2 Gen 2 (10 Gbps)"],
+      pcie: "M.2 PCIe 3.0",
+    },
+  },
+  {
+    id: "optiplex-7020",
+    name: "OptiPlex 7020",
+    brand: "Dell",
+    kind: "oem-desktop",
+    year: 2014,
+    platformIds: ["haswell-s"],
+    memory: ["DDR3"],
+    note: "Haswell business desktop.",
+    ports: {
+      pcie: "PCIe 3.0 x16",
+    },
+  },
+  {
+    id: "poweredge-r730",
+    name: "PowerEdge R730",
+    brand: "Dell",
+    kind: "server",
+    year: 2014,
+    platformIds: ["xeon-e5-v3"],
+    memory: ["DDR4"],
+    note: "Dual-socket 2U server. DDR4 RDIMM only.",
+    ports: {
+      pcie: "PCIe 3.0 slots",
+    },
+  },
+];
